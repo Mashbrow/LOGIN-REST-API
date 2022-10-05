@@ -10,7 +10,8 @@ Gets:
 "/booking": returns the booking database as a json.  
 "/booking/<userid>": returns the bookings for a particular user as a json.  
 
-Posts:  "booking/<userid>": takes a booking as request, adds a booking for the user.  
+Posts:  
+"booking/<userid>": takes a booking as request, adds a booking for the user.  
 
 ## MOVIE
 File containing the Booking service.  
