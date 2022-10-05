@@ -5,8 +5,8 @@ Repository for practical work on REST API
 File containing the Booking service.
 Port:3201
 Host: localhost
-Gets:   "/": returns the homepage.
-        "/booking": returns the booking database as a json.
+Gets:   "/": returns the homepage. /n
+        "/booking": returns the booking database as a json. /n
         "/booking/<userid>": returns the bookings for a particular user as a json.
 
 Posts:  "booking/<userid>": takes a booking as request, adds a booking for the user.
