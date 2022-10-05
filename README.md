@@ -2,7 +2,7 @@
 Repository for practical work on REST API
 
 ## BOOKING
-File containing the Booking service.  
+Folder containing the Booking service.  
 Port:3201  
 Host: localhost  
 Gets:   
@@ -14,7 +14,7 @@ Posts:
 "booking/<userid>": takes a booking as request, adds a booking for the user.  
 
 ## MOVIE
-File containing the Booking service.  
+Folder containing the Booking service.  
 Port:3200  
 Host: localhost  
 Gets:   
@@ -31,7 +31,7 @@ Puts:
 "/movie/<movieid>/<rate>": changes the rating for a given movie.  
 
 ## SHOWTIME 
-File containing the Booking service.  
+Folder containing the Booking service.  
 Port:3202  
 Host: localhost  
 Gets:   
@@ -40,7 +40,7 @@ Gets:
 "/showtime/<date>": returns the shows for a particular date as a json.  
 
 ## USER
-File containing the Booking service.  
+Folder containing the Booking service.  
 Port:3203  
 Host: localhost  
 Gets:   
