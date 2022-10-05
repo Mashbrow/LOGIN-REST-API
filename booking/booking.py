@@ -6,22 +6,27 @@ from operator import itemgetter
 
 app = Flask(__name__)
 
+#Init Config
 PORT = 3201 
 HOST = '0.0.0.0'
 
+#Loading db
 with open('{}/databases/bookings.json'.format("."), "r") as jsf:
    bookings = json.load(jsf)["bookings"]
 
+#Index route
 @app.route("/", methods=['GET'])
 def home():
    print("coucou" + request.host)
    return "<h1 style='color:blue'>Welcome to the Booking service!</h1>"
 
+#Get all bookings
 @app.route("/booking", methods=['GET'])
 def get_json():
    res = make_response(jsonify(bookings), 200)
    return res
 
+#Get bookings for a user specifying an ID in the path
 @app.route("/booking/<userid>", methods=['GET'])
 def get_booking_for_user(userid):
    for b in bookings:
@@ -29,10 +34,12 @@ def get_booking_for_user(userid):
           return make_response(jsonify(b), 200)
    return make_response(jsonify({"error":"bad input parameter"}), 400)
 
+#Add booking for a user by specifying an ID in the path
 @app.route("/booking/<userid>", methods=['POST'])
 def add_booking_by_user(userid):
    req = request.get_json()
    #### Verify that the movie is scheduled
+   ## Request the showtime API
    host_ = 'http://' + request.host.split(':')[0]
    request_showtime = requests.get(host_ + ':' + '3202'+'/showtime')
    sch_dates = [sch["date"] for sch in request_showtime.json()]
