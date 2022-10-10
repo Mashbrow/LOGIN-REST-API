@@ -4,21 +4,26 @@ from werkzeug.exceptions import NotFound
 
 app = Flask(__name__)
 
+#Init config 
 PORT = 3202
 HOST = '0.0.0.0'
 
+#Load database
 with open('{}/databases/times.json'.format("."), "r") as jsf:
    schedule = json.load(jsf)["schedule"]
 
+#Index route
 @app.route("/", methods=['GET'])
 def home():
    return "<h1 style='color:blue'>Welcome to the Showtime service!</h1>"
 
+#Get all schedules
 @app.route("/showtime", methods=['GET'])
 def get_schedule():
    res = make_response(jsonify(schedule), 200)
    return res
 
+#Get the schedule for a specific date
 @app.route("/showtime/<date>", methods=['GET'])
 def get_movies_by_date(date):
    res = []
@@ -28,10 +33,6 @@ def get_movies_by_date(date):
          return res
    return make_response(jsonify({"bad input parameter"}), 400)
 
-
-   
-
-   return res
 
 if __name__ == "__main__":
    print("Server running in port %s"%(PORT))
