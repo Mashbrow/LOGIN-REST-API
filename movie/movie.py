@@ -113,7 +113,7 @@ def del_movie(movieid):
 
 #Request the IMDB database to get the wikipedia page plain text of a movie
 # by specifying an ID
-@app.route("/movies/wikipedia/<movieid>")
+@app.route("/movies/wikipedia/<movieid>", methods=['GET'])
 def get_imdb_wikipedia(movieid):
     imdb_response = requests.get("https://imdb-api.com/fr/API/Wikipedia/k_3huc73c2/" + movieid)
     json_imdb = imdb_response.json()
