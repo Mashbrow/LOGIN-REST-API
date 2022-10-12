@@ -4,8 +4,8 @@ To launch with docker-compose, get to the LOGIN-REST-API folder and type `docker
 
 - TP vert effectué.
 - TP bleu effectué de deux versions différentes:
-  - Version 1 dans movie. Des recommandations sont renvoyées dans la réponse aux GET.
-  - Versions 2 dans movie2. Un GET `help` et un GET `reco` sont ajoutés pour proposer des recommandations en fonction du dernier GET.  
+  - Version 1 dans `movie`. Des recommandations sont renvoyées dans la réponse aux GET.
+  - Versions 2 dans `movie2`. Un GET `help` et un GET `reco` sont ajoutés pour proposer des recommandations en fonction du dernier GET.  
   En effet, les deux méthodes présentent des incovénients (modification des réponses ou insersion de variabels globales), et nous avons décidé de proposer les deux.
 - TP rouge effectué, peut être testé avec la méthode `localhost:3200/movies/wikipedia/tt1375666`.
 
