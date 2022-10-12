@@ -1,6 +1,6 @@
 # LOGIN-REST-API
 Repository for practical work on REST API  
-To launch with docker-compose, get to the LOGIN-REST-API folder and type docker-compose up in your terminal. Then use the requests of the REST servicies.  
+To launch with docker-compose, get to the LOGIN-REST-API folder and type `docker-compose up`` in your terminal. Then use the requests of the REST servicies.  
 
 ## BOOKING
 Folder containing the Booking service.  
