@@ -1,7 +1,7 @@
 ## TP UE Services
 Les rendus des tp sont divisés en 3 dossier, pour REST, GRPC et GRAPHQL.  
 Le but de ces TP était de créer un service de gestion de réservations en faisant appel à 3 services (movie, booking et showtime) ainsi qu'à un client (user).   
-![alt text](https://github.com/Mashbrow/LOGIN-REST-API/graphe.png)
+![alt text](https://github.com/Mashbrow/LOGIN-REST-API/main/graphe.png)
 - Rest
   - TP vert effectué.
   - TP bleu effectué de deux versions différentes:
