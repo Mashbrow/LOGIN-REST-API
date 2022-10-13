@@ -60,4 +60,4 @@ Host: localhost
 Gets:   
 "/": returns the homepage.  
 "/user": returns the user database as a json.  
-"/user/&lt;userid&gt;": returns the user with this id as a json.  
+"/user/&lt;userid&gt;": returns the user's average rating.
