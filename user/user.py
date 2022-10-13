@@ -36,7 +36,7 @@ def get_average_user_rating(userid):
       return make_response(jsonify({"error":"no user found"}), 400)
    
    #Request booking API to get all the booking of a user
-   host_ = 'http://' + request.host.split(':')[0]
+   host_ = 'http://booking'
    request_booking = requests.get(host_ + ':' + '3201'+'/booking/'+str(userid))
    if request_booking.ok : 
       bookings = request_booking.json()
@@ -44,7 +44,7 @@ def get_average_user_rating(userid):
       return make_response({"error":"no movies booked for that user"}, 409)
 
    #Request movie API to get all the movies in the database 
-   request_movie = requests.get(host_ + ':' + '3200' + '/json')
+   request_movie = requests.get("http://movie" + ':' + '3200' + '/json')
    movies_list = request_movie.json()['movies']
 
    #Get movie booked
