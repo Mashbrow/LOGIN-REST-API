@@ -46,7 +46,7 @@ Puts:
 
 ## MOVIE2
 Folder containing the movie service.  
-Port:3200  
+Port:3204  
 Host: localhost  
 Gets: Same as movie, but with the following gets added:  
 "/help": gives you indications on how to use reco.  
