@@ -28,7 +28,7 @@ Posts:
 "booking/&lt;userid&gt;": takes a booking as request, adds a booking for the user.  
 
 ## MOVIE
-Folder containing the Booking service.  
+Folder containing the movie service.  
 Port:3200  
 Host: localhost  
 Gets:   
@@ -44,8 +44,16 @@ Posts:
 Puts:   
 "/movie/&lt;movieid&gt;/&lt;rate&gt;": changes the rating for a given movie.  
 
+## MOVIE2
+Folder containing the movie service.  
+Port:3200  
+Host: localhost  
+Gets: Same as movie, but with the following gets added:  
+"/help": gives you indications on how to use reco.  
+"/reco": gives you a recommandation of what to do next.  
+
 ## SHOWTIME 
-Folder containing the Booking service.  
+Folder containing the showtime service.  
 Port:3202  
 Host: localhost  
 Gets:   
@@ -54,7 +62,7 @@ Gets:
 "/showtime/&lt;date&gt;": returns the shows for a particular date as a json.  
 
 ## USER
-Folder containing the Booking service.  
+Folder containing the user service.  
 Port:3203  
 Host: localhost  
 Gets:   
