@@ -26,4 +26,4 @@ Le but de ces TP était de créer un service de gestion de réservations en fais
 
 ## Concernant les Performances de ces trois API:
 
-yet to be done
+Nous avons décidé d'étudier les performances des 3 API en se basant sur le service movie précédemment mis en place sur les trois tps précédents.
